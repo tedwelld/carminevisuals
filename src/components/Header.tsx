@@ -1,14 +1,16 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   const navLinks = [
-    { name: "Vision", href: "#vision" },
-    { name: "Mission", href: "#mission" },
-    { name: "Values", href: "#values" },
-    { name: "Pillars", href: "#pillars" },
+    { name: "Home", href: "/" },
+    { name: "Services", href: "/services" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -22,13 +24,13 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -46,14 +48,14 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden py-4 border-t border-border/50">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 onClick={() => setIsMenuOpen(false)}
                 className="block py-3 text-base font-medium text-muted-foreground hover:text-foreground transition-colors duration-200"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </nav>
         )}
