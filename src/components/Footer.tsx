@@ -1,40 +1,64 @@
-import { Instagram, Youtube, Video } from "lucide-react";
+import { Instagram, Youtube, Video, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="py-12 bg-secondary text-secondary-foreground">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="text-xl font-serif font-semibold tracking-tight">
-            Carmine Visuals <span className="text-primary">Africa</span>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <div className="text-xl font-serif font-semibold tracking-tight mb-4">
+              Carmine Visuals <span className="text-primary">Africa</span>
+            </div>
+            <p className="text-secondary-foreground/70 text-sm italic">
+              "Telling Africa's Wild Stories. Inspiring the Next Generation."
+            </p>
           </div>
 
-          <div className="flex items-center gap-6">
-            <a
-              href="#"
-              className="text-secondary-foreground/60 hover:text-primary transition-colors"
-              aria-label="Instagram"
-            >
-              <Instagram size={20} />
-            </a>
-            <a
-              href="#"
-              className="text-secondary-foreground/60 hover:text-primary transition-colors"
-              aria-label="YouTube"
-            >
-              <Youtube size={20} />
-            </a>
-            <a
-              href="#"
-              className="text-secondary-foreground/60 hover:text-primary transition-colors"
-              aria-label="Vimeo"
-            >
-              <Video size={20} />
-            </a>
+          <div>
+            <h4 className="font-semibold mb-3">Contact</h4>
+            <div className="space-y-2 text-sm text-secondary-foreground/70">
+              <div className="flex items-center gap-2">
+                <Phone size={14} />
+                <span>+263 789 276 807 / +263 777 555 017</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <MapPin size={14} className="mt-0.5 flex-shrink-0" />
+                <span>3281 Hlalanikhle Extension - Hwange, Dete<br />Matabeleland North, Zimbabwe</span>
+              </div>
+            </div>
           </div>
 
-          <p className="text-sm text-secondary-foreground/60">
-            © {new Date().getFullYear()} Carmine Visuals Africa. All rights reserved.
+          <div>
+            <h4 className="font-semibold mb-3">Follow Us</h4>
+            <div className="flex items-center gap-4">
+              <a
+                href="#"
+                className="text-secondary-foreground/60 hover:text-primary transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram size={20} />
+              </a>
+              <a
+                href="#"
+                className="text-secondary-foreground/60 hover:text-primary transition-colors"
+                aria-label="YouTube"
+              >
+                <Youtube size={20} />
+              </a>
+              <a
+                href="#"
+                className="text-secondary-foreground/60 hover:text-primary transition-colors"
+                aria-label="Vimeo"
+              >
+                <Video size={20} />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-secondary-foreground/10 pt-6">
+          <p className="text-sm text-secondary-foreground/60 text-center">
+            © 2026 Carmine Visuals Africa. All rights reserved.
           </p>
         </div>
       </div>
