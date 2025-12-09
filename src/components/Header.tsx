@@ -5,10 +5,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "Work", href: "#work" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Contact", href: "#contact" },
+    { name: "Vision", href: "#vision" },
+    { name: "Mission", href: "#mission" },
+    { name: "Values", href: "#values" },
+    { name: "Pillars", href: "#pillars" },
   ];
 
   return (
@@ -16,7 +16,7 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="/" className="text-xl md:text-2xl font-serif font-semibold tracking-tight">
-            carmine<span className="text-primary">visuals</span>
+            Carmine Visuals <span className="text-primary">Africa</span>
           </a>
 
           {/* Desktop Navigation */}
