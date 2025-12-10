@@ -1,4 +1,5 @@
-import { Camera, Users, Heart, Briefcase, Eye, Target, Award } from "lucide-react";
+import { Camera, Users, Heart, Briefcase, Eye, Target, Award, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 // Gallery images
 import community1 from "@/assets/gallery/community-1.jpg";
@@ -241,6 +242,27 @@ const CVAContent = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* News Link Section */}
+      <section className="py-12 md:py-16 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="bg-primary/10 rounded-lg p-8 md:p-12 border border-primary/20 text-center">
+            <h3 className="text-xl md:text-2xl font-serif font-semibold mb-4">
+              Stay Updated with Conservation News
+            </h3>
+            <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
+              Read the latest stories, insights, and developments in wildlife conservation across Zimbabwe and Africa.
+            </p>
+            <Link 
+              to="/news" 
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+            >
+              Read Our News
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>
