@@ -1,4 +1,14 @@
-import { Camera, Users, Heart, Briefcase, Eye, Target, Award, Handshake, Shield } from "lucide-react";
+import { Camera, Users, Heart, Briefcase, Eye, Target, Award } from "lucide-react";
+
+// Gallery images
+import community1 from "@/assets/gallery/community-1.jpg";
+import elephant1 from "@/assets/gallery/elephant-1.jpg";
+import elephant2 from "@/assets/gallery/elephant-2.jpg";
+import community2 from "@/assets/gallery/community-2.jpg";
+import elephant3 from "@/assets/gallery/elephant-3.jpg";
+import wildDog from "@/assets/gallery/wild-dog.jpg";
+import community3 from "@/assets/gallery/community-3.jpg";
+import fishEagle from "@/assets/gallery/fish-eagle.jpg";
 
 const CVAContent = () => {
   const coreValues = [
@@ -93,6 +103,44 @@ const CVAContent = () => {
             <span className="px-3 py-1 bg-secondary-foreground/10 rounded-full">Media Education</span>
             <span className="px-3 py-1 bg-secondary-foreground/10 rounded-full">Youth Empowerment</span>
             <span className="px-3 py-1 bg-secondary-foreground/10 rounded-full">Wildlife Communication</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Photo Gallery Section */}
+      <section className="py-16 md:py-20 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4">Our Work in Action</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Capturing the essence of conservation, community, and wildlife across Africa.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="aspect-square overflow-hidden rounded-lg">
+              <img src={elephant1} alt="African elephant portrait" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div className="aspect-square overflow-hidden rounded-lg">
+              <img src={community1} alt="Community members celebrating" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div className="aspect-square overflow-hidden rounded-lg">
+              <img src={fishEagle} alt="African fish eagle" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div className="aspect-square overflow-hidden rounded-lg">
+              <img src={community2} alt="Community member watering crops" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div className="aspect-square overflow-hidden rounded-lg">
+              <img src={elephant2} alt="Elephant mother and calf in water" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div className="aspect-square overflow-hidden rounded-lg">
+              <img src={wildDog} alt="African wild dog" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div className="aspect-square overflow-hidden rounded-lg">
+              <img src={community3} alt="Conservation worker" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div className="aspect-square overflow-hidden rounded-lg">
+              <img src={elephant3} alt="Baby elephant in water" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
           </div>
         </div>
       </section>
