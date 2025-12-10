@@ -39,7 +39,7 @@ const Footer = () => {
                 <Instagram size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@carminevisuals"
                 className="text-secondary-foreground/60 hover:text-primary transition-colors"
                 aria-label="YouTube"
               >
