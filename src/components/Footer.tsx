@@ -32,7 +32,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-3">Follow Us</h4>
             <div className="flex items-center gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/carminevisuals/#"
                 className="text-secondary-foreground/60 hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
