@@ -46,9 +46,9 @@ const Footer = () => {
                 <Youtube size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=100083043715363"
                 className="text-secondary-foreground/60 hover:text-primary transition-colors"
-                aria-label="Vimeo"
+                aria-label="Facebook"
               >
                 <Video size={20} />
               </a>
