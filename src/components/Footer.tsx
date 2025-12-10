@@ -23,7 +23,7 @@ const Footer = () => {
               </div>
               <div className="flex items-start gap-2">
                 <MapPin size={14} className="mt-0.5 flex-shrink-0" />
-                <span>3281 Hlalanikhle Extension - Hwange, Dete<br />Matabeleland North, Zimbabwe</span>
+                <span>3281 Hlalanikuhle Extension - Hwange-Dete<br />Matabeleland North-Zimbabwe</span>
               </div>
             </div>
           </div>
