@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Mic, PenTool } from "lucide-react";
 import { Camera, Video } from "lucide-react";
 
 const services = [
@@ -25,6 +26,30 @@ const services = [
       "Promotional Videos for Lodges & Tourism",
       "Educational & Training Videos",
       "Social Media Content Creation",
+    ],
+  },
+   {
+    icon: Mic,
+    title: "Podcasts",
+    description: "Engaging audio storytelling that brings conservation voices to life, sharing stories from the field and connecting communities.",
+    features: [
+      "Wildlife Conservation Podcasts",
+      "Community Voices & Interviews",
+      "Educational Audio Series",
+      "Behind-the-Scenes Field Stories",
+      "Multilingual Content Production",
+    ],
+  },
+  {
+    icon: PenTool,
+    title: "Creative Direction",
+    description: "Strategic creative guidance for conservation campaigns, branding, and visual storytelling initiatives.",
+    features: [
+      "Brand Identity for Conservation",
+      "Campaign Creative Strategy",
+      "Visual Storytelling Consultation",
+      "Content Strategy & Planning",
+      "Exhibition & Event Design",
     ],
   },
 ];
