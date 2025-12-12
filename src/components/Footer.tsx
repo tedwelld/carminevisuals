@@ -1,4 +1,4 @@
-import { Instagram, Youtube, Video, MapPin, Phone, Facebook, MessageCircle } from "lucide-react";
+import { Instagram, Youtube, Video, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -57,7 +57,7 @@ const Footer = () => {
                 className="text-secondary-foreground/60 hover:text-primary transition-colors"
                 aria-label="Facebook"
               >
-                <Facebook size={20} />
+                <Video size={20} />
               </a>
             </div>
           </div>
