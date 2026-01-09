@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import News from "./pages/News";
 import NotFound from "./pages/NotFound";
+import BackToTop from "./components/BackToTop";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      <BackToTop />
     </TooltipProvider>
   </QueryClientProvider>
 );

@@ -1,4 +1,4 @@
-import { Camera, Users, Heart, Briefcase, Eye, Target, Award, ArrowRight } from "lucide-react";
+import { FaCamera, FaUsers, FaHeart, FaBriefcase, FaEye, FaBullseye, FaAward, FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 // Gallery images
@@ -37,7 +37,7 @@ const CVAContent = () => {
 
   const pillars = [
     {
-      icon: Camera,
+      icon: FaCamera,
       title: "Conservation Storytelling & Media Production",
       subtitle: "Documenting Africa's wild spaces with authenticity, creativity, and scientific respect.",
       activities: [
@@ -50,7 +50,7 @@ const CVAContent = () => {
       purpose: "To inspire action, highlight conservation challenges and successes, and ensure African voices lead their own wildlife narrative.",
     },
     {
-      icon: Users,
+      icon: FaUsers,
       title: "Youth Training, Skills Transfer & the Future Storytellers Programme",
       subtitle: "Transforming young people into storytellers, conservation ambassadors, and future environmental professionals.",
       activities: [
@@ -63,7 +63,7 @@ const CVAContent = () => {
       purpose: "To inspire and equip youth to pursue storytelling roles and conservation careers — ensuring the next generation carries the mission forward.",
     },
     {
-      icon: Heart,
+      icon: FaHeart,
       title: "Community & Conservation Engagement",
       subtitle: "Strengthening community ownership of wildlife conservation.",
       activities: [
@@ -76,7 +76,7 @@ const CVAContent = () => {
       purpose: "To make conservation relatable, local, community-owned — and to elevate voices that are often unheard in mainstream wildlife media.",
     },
     {
-      icon: Briefcase,
+      icon: FaBriefcase,
       title: "Media Services & Strategic Partnerships",
       subtitle: "A sustainable business arm supporting our long-term impact.",
       activities: [
@@ -119,28 +119,28 @@ const CVAContent = () => {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="aspect-square overflow-hidden rounded-lg">
-              <img src={elephant1} alt="African elephant portrait" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+              <img loading="lazy" decoding="async" src={elephant1} alt="African elephant portrait" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
             </div>
             <div className="aspect-square overflow-hidden rounded-lg">
-              <img src={community1} alt="Community members celebrating" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+              <img loading="lazy" decoding="async" src={community1} alt="Community members celebrating" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
             </div>
             <div className="aspect-square overflow-hidden rounded-lg">
-              <img src={fishEagle} alt="African fish eagle" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+              <img loading="lazy" decoding="async" src={fishEagle} alt="African fish eagle" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
             </div>
             <div className="aspect-square overflow-hidden rounded-lg">
-              <img src={community2} alt="Community member watering crops" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+              <img loading="lazy" decoding="async" src={community2} alt="Community member watering crops" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
             </div>
             <div className="aspect-square overflow-hidden rounded-lg">
-              <img src={elephant2} alt="Elephant mother and calf in water" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+              <img loading="lazy" decoding="async" src={elephant2} alt="Elephant mother and calf in water" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
             </div>
             <div className="aspect-square overflow-hidden rounded-lg">
-              <img src={wildDog} alt="African wild dog" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+              <img loading="lazy" decoding="async" src={wildDog} alt="African wild dog" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
             </div>
             <div className="aspect-square overflow-hidden rounded-lg">
-              <img src={community3} alt="Conservation worker" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+              <img loading="lazy" decoding="async" src={community3} alt="Conservation worker" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
             </div>
             <div className="aspect-square overflow-hidden rounded-lg">
-              <img src={elephant3} alt="Baby elephant in water" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+              <img loading="lazy" decoding="async" src={elephant3} alt="Baby elephant in water" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
             </div>
           </div>
         </div>
@@ -151,7 +151,7 @@ const CVAContent = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-6">
-              <Eye className="w-12 h-12 text-primary" />
+              <FaEye className="w-12 h-12 text-primary" />
             </div>
             <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-6">Vision</h2>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
@@ -166,7 +166,7 @@ const CVAContent = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-6">
-              <Target className="w-12 h-12 text-primary" />
+              <FaBullseye className="w-12 h-12 text-primary" />
             </div>
             <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-6">Mission</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
@@ -184,7 +184,7 @@ const CVAContent = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <div className="flex justify-center mb-6">
-              <Award className="w-12 h-12 text-primary" />
+              <FaAward className="w-12 h-12 text-primary" />
             </div>
             <h2 className="text-3xl md:text-4xl font-serif font-semibold">Core Values</h2>
           </div>
@@ -261,7 +261,7 @@ const CVAContent = () => {
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               Read Our News
-              <ArrowRight className="w-4 h-4" />
+              <FaArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>

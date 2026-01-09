@@ -1,4 +1,4 @@
-import { Instagram, Youtube, Video, MapPin, Phone } from "lucide-react";
+import { FaInstagram, FaYoutube, FaFacebookF, FaMapMarkerAlt, FaPhone, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -36,28 +36,28 @@ const Footer = () => {
                 className="text-secondary-foreground/60 hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
-                <Instagram size={20} />
+                <FaInstagram size={20} />
               </a>
               <a
                 href="https://www.youtube.com/@carminevisuals"
                 className="text-secondary-foreground/60 hover:text-primary transition-colors"
                 aria-label="YouTube"
               >
-                <Youtube size={20} />
+                <FaYoutube size={20} />
               </a>
-                          <a
+              <a
                 href="https://wa.me/263777555017"
                 className="text-secondary-foreground/60 hover:text-primary transition-colors"
                 aria-label="WhatsApp"
               >
-                <MessageCircle size={20} />
+                <FaWhatsapp size={20} />
               </a>
-               <a
+              <a
                 href="https://www.facebook.com/profile.php?id=100083043715363"
                 className="text-secondary-foreground/60 hover:text-primary transition-colors"
                 aria-label="Facebook"
               >
-                <Video size={20} />
+                <FaFacebookF size={20} />
               </a>
             </div>
           </div>

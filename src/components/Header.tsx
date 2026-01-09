@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import { Link, useLocation } from "react-router-dom";
 import { ThemeToggle } from "./ThemeToggle";
 import logo from "@/assets/logo.png";
@@ -17,9 +17,9 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50 shadow-sm">
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-16 md:h-20">
+          <div className="flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="flex items-center gap-3">
             <img src={logo} alt="Carmine Visuals Africa" className="h-10 w-10 object-contain" />
             <span className="text-xl md:text-2xl font-serif font-semibold tracking-tight">
@@ -49,7 +49,7 @@ const Header = () => {
               className="p-2 text-foreground"
               aria-label="Toggle menu"
             >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMenuOpen ? <HiOutlineX size={24} /> : <HiOutlineMenu size={24} />}
             </button>
           </div>
         </div>
