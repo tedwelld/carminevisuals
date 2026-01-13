@@ -1,4 +1,4 @@
-import { FaInstagram, FaYoutube, FaFacebookF, FaMapMarkerAlt, FaPhone, FaWhatsapp } from "react-icons/fa";
+import { Instagram, Youtube, Video, MapPin, Phone, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -36,28 +36,28 @@ const Footer = () => {
                 className="text-secondary-foreground/60 hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
-                <FaInstagram size={20} />
+                <Instagram size={20} />
               </a>
               <a
                 href="https://www.youtube.com/@carminevisuals"
                 className="text-secondary-foreground/60 hover:text-primary transition-colors"
                 aria-label="YouTube"
               >
-                <FaYoutube size={20} />
+                <Youtube size={20} />
               </a>
-              <a
+                          <a
                 href="https://wa.me/263777555017"
                 className="text-secondary-foreground/60 hover:text-primary transition-colors"
                 aria-label="WhatsApp"
               >
-                <FaWhatsapp size={20} />
+                <MessageCircle size={20} />
               </a>
-              <a
+               <a
                 href="https://www.facebook.com/profile.php?id=100083043715363"
                 className="text-secondary-foreground/60 hover:text-primary transition-colors"
                 aria-label="Facebook"
               >
-                <FaFacebookF size={20} />
+                <Video size={20} />
               </a>
             </div>
           </div>
@@ -66,6 +66,7 @@ const Footer = () => {
         <div className="border-t border-secondary-foreground/10 pt-6">
           <p className="text-sm text-secondary-foreground/60 text-center">
             © 2026 Carmine Visuals Africa. All rights reserved.
+            <b>Powered by Tedwell & Co.</b>
           </p>
         </div>
       </div>

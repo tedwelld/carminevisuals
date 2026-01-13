@@ -1,12 +1,14 @@
-import { HiOutlineChevronDown } from "react-icons/hi";
+import { ArrowDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0">
-        <img src={heroBg} alt="Hero background" className="w-full h-full object-cover" />
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      >
         <div className="absolute inset-0 bg-secondary/70" />
       </div>
 
@@ -22,7 +24,7 @@ const Hero = () => {
         </p>
         <a
           href="#work"
-          className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-medium rounded-lg shadow-md hover:shadow-lg hover:bg-primary/90 transition-all duration-200"
+          className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors duration-200"
         >
           View Our Work
         </a>
@@ -30,7 +32,7 @@ const Hero = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-        <HiOutlineChevronDown className="w-6 h-6 text-secondary-foreground/60" />
+        <ArrowDown className="w-6 h-6 text-secondary-foreground/60" />
       </div>
     </section>
   );
