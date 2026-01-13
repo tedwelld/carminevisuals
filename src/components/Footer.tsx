@@ -66,7 +66,7 @@ const Footer = () => {
         <div className="border-t border-secondary-foreground/10 pt-6">
           <p className="text-sm text-secondary-foreground/60 text-center">
             © 2026 Carmine Visuals Africa. All rights reserved.
-            <b>Powered by Tedwell & Co.</b>
+            Powered by Tedwell & Co.
           </p>
         </div>
       </div>
