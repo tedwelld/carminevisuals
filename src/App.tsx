@@ -9,6 +9,10 @@ import Contact from "./pages/Contact";
 import News from "./pages/News";
 import NotFound from "./pages/NotFound";
 import BackToTop from "./components/BackToTop";
+import About from "./pages/About";
+import Programs from "./pages/Programs";
+import RouteEffects from "./components/RouteEffects";
+import WelcomeOverlay from "./components/WelcomeOverlay";
 
 const queryClient = new QueryClient();
 
@@ -18,9 +22,13 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <RouteEffects />
+        <WelcomeOverlay />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/programs" element={<Programs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/news" element={<News />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

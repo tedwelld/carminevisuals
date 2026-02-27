@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
+import AnimatedIcon from "./AnimatedIcon";
 
 const BackToTop = () => {
   const [visible, setVisible] = useState(false);
@@ -20,9 +21,9 @@ const BackToTop = () => {
     <button
       onClick={handleClick}
       aria-label="Back to top"
-      className="fixed right-6 bottom-6 z-50 p-3 rounded-full bg-primary text-primary-foreground shadow-lg hover:scale-105 transform-gpu transition"
+      className="fixed right-6 bottom-6 z-50 p-3 rounded-full glass-panel text-foreground hover:scale-105 transform-gpu transition"
     >
-      <FaArrowUp className="w-5 h-5" />
+      <AnimatedIcon icon={FaArrowUp} className="w-5 h-5 text-primary" animation="float" />
     </button>
   );
 };
